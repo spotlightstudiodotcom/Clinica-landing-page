@@ -3,7 +3,7 @@ import React from 'react';
 import { Carousel } from "@material-tailwind/react";
 
 interface TestimonialProps {
-  logoSrc: string;
+  logoSrc?: string;
   quote: string;
   authorImageSrc: string;
   authorName: string;
@@ -47,25 +47,25 @@ const Testimonial: React.FC<TestimonialProps> = ({
 
 const testimonials: TestimonialProps[] = [
   {
-    logoSrc: "https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg",
+    // logoSrc: "https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg",
     quote: "A melhor clínica odontológica que já frequentei. Tratamentos eficazes e sem dor!",
     authorImageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     authorName: "Maria S",
     authorTitle: "Enfermeira"
   },
   {
-    logoSrc: "https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg",
-    quote: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    authorImageSrc: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    authorName: "John Doe",
-    authorTitle: "CTO of TechCorp"
+    // logoSrc: "https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg",
+    quote: "A melhor clínica odontológica que já frequentei. Tratamentos eficazes e sem dor!",
+    authorImageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    authorName: "Laura Silva",
+    authorTitle: "Modelo"
   },
   {
-    logoSrc: "https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg",
-    quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    authorImageSrc: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    authorName: "Jane Smith",
-    authorTitle: "Designer at CreativeCo"
+    // logoSrc: "https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg",
+    quote: "A melhor clínica odontológica que já frequentei. Tratamentos eficazes e sem dor!",
+    authorImageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    authorName: "Sarah Santos",
+    authorTitle: "Médica"
   }
 ];
 
