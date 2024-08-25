@@ -5,7 +5,7 @@ import { Facebook, Instagram, Twitter,ArrowRight } from "lucide-react";
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = ["Inicio", "Sobre", "Consultas", "Contato"];
+  const menuItems = ["Inicio", "Sobre","Tratamentos" ,"Consultas", "Contato"];
   
   return (
     <header className="absolute top-0 left-0 right-0 z-10 bg-transparent">
@@ -22,23 +22,23 @@ export const NavBar = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex order-2 items-center justify-center w-fit gap-4">
             {menuItems.map((item, index) => (
-              <a key={index} href="#" className="text-white text-sm font-medium px-2 relative group w-fit">
+              <a key={index} href="#" className="text-white text-sm font-medium px-2 relative group w-full">
                 <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-white group-hover:w-full"></span>
                 {item}
               </a>
             ))}
           </div>
-          
+         
           {/* Mobile Menu Button */}
-          <div className="order-4 flex items-center group peer lg:hidden">
+          <div className="order-3 flex items-center group peer lg:hidden flex items-center justify-center">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="bg-transparent hover:bg-gray-50/10 rounded-lg p-2 cursor-pointer"
+              className=" rounded-lg cursor-pointer w-full h-full flex justify-center items-center"
             >
-              <svg width="16" height="16" viewBox="0 0 256 256" className={`fill-white transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}>
+              <svg width="16" height="16" viewBox="0 0 256 256" className={`fill-white transition-opacity duration-300 ${isMenuOpen ? 'hidden' : 'block'}`}>
                 <path d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12ZM40 76h176a12 12 0 0 0 0-24H40a12 12 0 0 0 0 24Zm176 104H40a12 12 0 0 0 0 24h176a12 12 0 0 0 0-24Z"/>
               </svg>
-              <svg width="16" height="16" viewBox="0 0 256 256" className={`absolute top-2 left-2 fill-white transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+              <svg width="16" height="16" viewBox="0 0 256 256" className={`fill-white transition-opacity duration-300 ${isMenuOpen ? 'block' : 'hidden'}`}>
                 <path d="M208.49 191.51a12 12 0 0 1-17 17L128 145l-63.51 63.49a12 12 0 0 1-17-17L111 128 47.51 64.49a12 12 0 0 1 17-17L128 111l63.51-63.52a12 12 0 0 1 17 17L145 128Z"/>
               </svg>
             </button>
